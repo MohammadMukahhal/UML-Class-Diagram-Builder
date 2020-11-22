@@ -3,7 +3,87 @@
 .jumbotron-fluid{
 	height: 250px;
 }
+.div.UML.Class{
+	
+}
+h5{
+	
+	text-align: center;
+}
 
+#varPlusButton,#funcPlusButton{
+	border-radius: 100%;
+	background: #2867B2;
+	border: 1px solid #2867B2;
+	font-weight: bolder;
+	color: white;
+	font-size: 14px;
+	margin-left: 10px;
+	width: 25px;
+    height: 25px;
+}
+
+#deleteClassBtn,#deleteVarBtn,#deleteVarBtn2,#deleteVarBtn3,#deleteVarBtn4,#deleteVarBtn5,#deleteVarBtn6,#deleteVarBtn7,#deleteVarBtn8,#deleteVarBtn9,#deleteFuncBtn,#deleteFuncBtn2,#deleteFuncBtn3,#deleteFuncBtn4,#deleteFuncBtn5,#deleteFuncBtn6,#deleteFuncBtn7,#deleteFuncBtn8,#deleteFuncBtn9{
+	border-radius: 100%;
+	background: #C0070B;
+	border: 1px solid #C0070B;
+	font-weight: bolder;
+	color: white;
+	font-size: 14px;
+	margin-left: 10px;
+	width: 25px;
+    height: 25px;
+}
+#deleteClassBtn{
+	margin-left: 60px;
+	width: 30px;
+    height: 30px;
+	font-size: 18px;
+}
+.Acol-xl-3{
+ background: #2867B2;	
+ margin: auto;
+ padding: 10px;
+border: 1px solid black;
+}
+
+.Acol-xl-3{
+  margin: auto;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#ClassVar,#classFunc{
+	 border: 1px solid black;
+}
+#varName1,#varName,#varName2,#varName3,#varName4,#varName5,#varName6,#varName7,#varName8,#varName9,#funcName,#funcName1,#funcName2,#funcName3,#funcName4,#funcName5,#funcName6,#funcName7,#funcName8,#funcName9,#className{
+	border-radius: 5px;
+	border: 2px solid #2867B2;
+	padding-left: 10px;
+	margin-left: 10px;
+
+}
+
+.ClassName{
+	margin-left: 20px;
+	font-weight: bold;
+}
+#className{
+	margin-left: 40px;
+}
+.Ccol-xl-5{
+ margin: auto;
+ padding: 20px;
+ border: 1px solid black;
+
+}
+
+.DDL,.DDL1{
+	cursor: pointer;
+}
+.DDL1{
+	margin-left: 150px;
+}
 #sliderContainer{
 	
 }
