@@ -1,2 +1,62 @@
-/* CSS Document */
+.help-header {
+  padding: 60px;
+  text-align: center;
+  background: #99b7e0;
+  color: #1966D0;
+  font-size: 30px;
+}
 
+
+p.accordion {
+    background-color: #eee;
+	font-size: 17px;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom:10px;
+}
+
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+p.accordion.active, p.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Unicode character for "plus" sign (+) */
+p.accordion:after {
+    content: '\2795'; 
+    font-size: 13px;
+    color: #444;
+	text-align: left;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+    content: "\2796"; 
+}
+
+/* Style the element that is used for the panel class */
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+	font-size: 17px;
+	text-align: left;
+    color: #444;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom:10px;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
