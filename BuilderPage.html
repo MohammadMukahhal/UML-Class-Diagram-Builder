@@ -326,8 +326,7 @@
 <script type="text/javascript">
 	
 	function GetDynamicTextBox1(value){
-    return  '<select name="DDL" class="DDL"/>' + '<option>Select Modifier</option>'+ '<option>Public</option>'+'<option>Private</option>'+'<option>Protected</option>'+'<input name = "DynamicTextBox" id="funcName1" type="text" value ="' + value + '" />' + 
-            '<input type="button" value="-" id="deleteFuncBtn" onclick = "RemoveTextBox1(this)" />'
+    return  '<select name="DDL" class="DDL"/>' + '<option>Select Modifier</option>'+ '<option>Public</option>'+'<option>Private</option>'+'<option>Protected</option>'+'<input name = "DynamicTextBox" id="funcName1" type="text" value ="' + value + '" />' + '<input type="button" value="-" id="deleteFuncBtn" onclick = "RemoveTextBox1(this)" />'
 	
 }
 function AddTextBox1() {
@@ -364,11 +363,8 @@ window.onload = RecreateDynamicTextboxes1;
 <!-----Script to add and delete textboxes and drop down menus for Class variables------>  
 <script type="text/javascript">
 	
-
-
 function GetDynamicTextBox(value){
-    return  '<select name="DDL" class="DDL"/>' + '<option>Select Modifier</option>'+ '<option>Public</option>'+'<option>Private</option>'+'<option>Protected</option>'+'<input name = "DynamicTextBox" id="varName1" type="text" value ="' + value + '" />' + 
-            '<input type="button" value="-" id="deleteVarBtn" onclick = "RemoveTextBox(this)" />'
+    return  '<select name="DDL" class="DDL"/>' + '<option>Select Modifier</option>'+ '<option>Public</option>'+'<option>Private</option>'+'<option>Protected</option>'+'<input name = "DynamicTextBox" id="varName1" type="text" value ="' + value + '" />' + '<input type="button" value="-" id="deleteVarBtn" onclick = "RemoveTextBox(this)" />'
 	
 }
 function AddTextBox() {
