@@ -49,7 +49,7 @@
 <!-- END OF THE HEADER --> 
 
 <!-- CODE FOR THE UML Classes -->
-<div class="UML Class">
+<div class="UML Class" id="UMLClass">
   <!-- Code of the uml class name -->
   <form class="Acol-xl-3 offset-xl-4 col-xl-4">
     <label for="textfield" class="ClassName" style= "color: white">Class Name</label>
@@ -61,7 +61,7 @@
 <!-- Code for the drop down menus,add,delete buttons,and text,for class variable section -->
   <form class="offset-xl-4 col-xl-4" id="ClassVar">
     <br>
-	  
+	  <div class="col-xl-12">
     <h5 style="color:#2867B2;">Class Variables</h5>
     <!-- Code for the drop down menu -->
     <select name="DDL" class="DDL">
@@ -73,114 +73,27 @@
     <!-- End for the drop down menu -->
 	  
     <!-- Code for the text and Add button -->
-    <label for="varName" ></label>
-    <input type="text" name="varName" id="varName">
-    <input type="button" name="buttonPlus" id="varPlusButton" value="+">
-    <!-- End for the text and Add button -->
-    <br>
-	  <!-- Code for the drop down menu -->
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-	  <!-- End for the drop down menu -->
-	  
-	  <!-- Code for the text and Delete button -->
-    <label for="varName1"></label>
-    <input type="text" name="varName1" id="varName1">
-    <input name="buttonSub" type="button" id="deleteVarBtn" value="-">
-    <br>
-	  <!-- End for text and Delete button -->
-	  
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="varName2"></label>
-    <input type="text" name="varName2" id="varName2">
-    <input name="buttonSub2" type="button" id="deleteVarBtn2" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="varName3"></label>
-    <input type="text" name="varName3" id="varName3">
-    <input name="buttonSub3" type="button" id="deleteVarBtn3" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="varName4"></label>
-    <input type="text" name="varName4" id="varName4">
-    <input name="buttonSub4" type="button" id="deleteVarBtn4" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="varName5"></label>
-    <input type="text" name="varName5" id="varName5">
-    <input name="buttonSub5" type="button" id="deleteVarBtn5" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="varName6"></label>
-    <input type="text" name="varName6" id="varName6">
-    <input name="buttonSub6" type="button" id="deleteVarBtn6" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="varName7"></label>
-    <input type="text" name="varName7" id="varName7">
-    <input name="buttonSub7" type="button" id="deleteVarBtn7" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="varName8"></label>
-    <input type="text" name="varName8" id="varName8">
-    <input name="buttonSub8" type="button" id="deleteVarBtn8" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="varName9"></label>
-    <input type="text" name="varName9" id="varName9">
-    <input name="buttonSub9" type="button" id="deleteVarBtn9" value="-">
-    <br>
-    <br>
+	 
+	
+		<label for="varName" ></label>
+    
+		<input type="text" name="varName" id="varName">
+    	<input type="button" name="buttonPlus" id="varPlusButton" value="+" onclick="AddTextBox()" onClick= "addSelect('select');">
+		<div id="TextBoxContainer" >
+    <!--Textboxes will be added here -->
+		</div>
+		<br />
+		<asp:button ID="btnPost" runat="server" Text="Post" OnClick="Post" />
+   
+    </div>
   </form>
+	 
 <!-- End for the drop down menus,add,delete buttons, and text for class variable section -->	
 	
 <!-- Code for the drop down menus,add,delete buttons, and text for class function section -->	
   <form class="offset-xl-4 col-xl-4" id="classFunc">
     <br>
+	  <div class="col-xl-12">
 	<!-- Header for class variable section -->  
     <h5 style="color:#2867B2;">Class Functions </h5>
 	  <!-- End of the Header for class variable section --> 
@@ -196,106 +109,17 @@
 	  <!-- Code for text and add button-->	  
     <label for="funcName"></label>
     <input type="text" name="funcName" id="funcName">
-    <input name="button3" type="button" id="funcPlusButton" value="+">
+    <input name="button3" type="button" id="funcPlusButton" value="+" onclick="AddTextBox1()" >
     <br>
+	  <div id="TextBoxContainer1" >
+    <!--Textboxes will be added here -->
+		</div>
+		<br />
+		<asp:button ID="btnPost1" runat="server" Text="Post" OnClick="Post" />
+		  </div>
 	 <!-- End for text and add button--> 
 	  
-	  <!-- Code for drop down menu-->
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-	  <!-- End for drop down menu-->
-	  
-	  <!-- Code for text and delete button-->	  
-    <label for="funcName1"></label>
-    <input type="text" name="funcName1" id="funcName1">
-    <input type="button" name="buttonSub" id="deleteFuncBtn" value="-">
-    <br>
-	   <!-- End for text and  delete button--> 
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="funcName2"></label>
-    <input type="text" name="funcName2" id="funcName2">
-    <input type="button" name="buttonSub2" id="deleteFuncBtn2" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="funcName3"></label>
-    <input type="text" name="funcName3" id="funcName3">
-    <input type="button" name="buttonSub3" id="deleteFuncBtn3" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="funcName4"></label>
-    <input type="text" name="funcName4" id="funcName4">
-    <input type="button" name="buttonSub4" id="deleteFuncBtn4" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="funcName5"></label>
-    <input type="text" name="funcName5" id="funcName5">
-    <input type="button" name="buttonSub5" id="deleteFuncBtn5" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="funcName6"></label>
-    <input type="text" name="funcName6" id="funcName6">
-    <input type="button" name="buttonSub6" id="deleteFuncBtn6" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="funcName7"></label>
-    <input type="text" name="funcName7" id="funcName7">
-    <input type="button" name="buttonSub7" id="deleteFuncBtn7" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="funcName8"></label>
-    <input type="text" name="funcName8" id="funcName8">
-    <input type="button" name="buttonSub8" id="deleteFuncBtn8" value="-">
-    <br>
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <label for="funcName9"></label>
-    <input type="text" name="funcName9" id="funcName9">
-    <input type="button" name="buttonSub9" id="deleteFuncBtn9" value="-">
-    &nbsp;<br>
-    <br>
+	
   </form>
 	<!-- End for the drop down menus,add, delete buttons, and text for class function section -->	
 	
@@ -498,7 +322,92 @@
     </div>
   </div>
 </div>
+<!-----Script to add and delete textboxes and drop down menus for Class function------>
+<script type="text/javascript">
+	
+	function GetDynamicTextBox1(value){
+    return  '<select name="DDL" class="DDL"/>' + '<option>Select Modifier</option>'+ '<option>Public</option>'+'<option>Private</option>'+'<option>Protected</option>'+'<input name = "DynamicTextBox" id="funcName1" type="text" value ="' + value + '" />' + 
+            '<input type="button" value="-" id="deleteFuncBtn" onclick = "RemoveTextBox1(this)" />'
+	
+}
+function AddTextBox1() {
+	
+	
+    var div1 = document.createElement('DIV');
+    div1.innerHTML = GetDynamicTextBox1("");
 
+    document.getElementById("TextBoxContainer1").appendChild(div1);
+	
+}
+ 
+function RemoveTextBox1(div1) {
+    document.getElementById("TextBoxContainer1").removeChild(div1.parentNode);
+	
+}
+ 
+function RecreateDynamicTextboxes1() {
+    var values1 = eval('<%=Values%>');
+    if (values1 != null) {
+        var html1 = "";
+        for (var i = 0; i < values1.length; i++) {
+            html1 += "<div>" + GetDynamicTextBox1(values[i]) + "</div>";
+        }
+	
+		
+
+		document.getElementById("TextBoxContainer1").appendChild(label).appendChild(select);
+    }
+}
+window.onload = RecreateDynamicTextboxes1;
+	</script>
+		  
+<!-----Script to add and delete textboxes and drop down menus for Class variables------>  
+<script type="text/javascript">
+	
+
+
+function GetDynamicTextBox(value){
+    return  '<select name="DDL" class="DDL"/>' + '<option>Select Modifier</option>'+ '<option>Public</option>'+'<option>Private</option>'+'<option>Protected</option>'+'<input name = "DynamicTextBox" id="varName1" type="text" value ="' + value + '" />' + 
+            '<input type="button" value="-" id="deleteVarBtn" onclick = "RemoveTextBox(this)" />'
+	
+}
+function AddTextBox() {
+	
+	
+    var div = document.createElement('DIV');
+    div.innerHTML = GetDynamicTextBox("");
+
+    document.getElementById("TextBoxContainer").appendChild(div);
+	
+}
+ 
+function RemoveTextBox(div) {
+    document.getElementById("TextBoxContainer").removeChild(div.parentNode);
+
+	
+	
+}
+ 
+function RecreateDynamicTextboxes() {
+    var values = eval('<%=Values%>');
+    if (values != null) {
+        var html = "";
+        for (var i = 0; i < values.length; i++) {
+            html += "<div>" + GetDynamicTextBox(values[i]) + "</div>";
+        }
+	
+		 
+ 
+        
+		document.getElementById("TextBoxContainer").appendChild(label).appendChild(select);
+    }
+}
+window.onload = RecreateDynamicTextboxes;
+</script>
+	
+
+	
+	
 <!--THIS IS THE END OF THE SLIDER--> 
 
 <!-- Button -->
@@ -528,5 +437,6 @@
 <script src="js/bootstrap-4.4.1.js"></script>
 <!-- This is our JS file not bootstrap -->
 <script src="js/BuilderPage.js"></script>
+
 </body>
 </html>

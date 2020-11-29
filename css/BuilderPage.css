@@ -26,23 +26,42 @@ h5{
     height: 25px;
 }
 /*Delete button for all functions and varables*/
-#deleteClassBtn,#deleteVarBtn,#deleteVarBtn2,#deleteVarBtn3,#deleteVarBtn4,#deleteVarBtn5,#deleteVarBtn6,#deleteVarBtn7,#deleteVarBtn8,#deleteVarBtn9,#deleteFuncBtn,#deleteFuncBtn2,#deleteFuncBtn3,#deleteFuncBtn4,#deleteFuncBtn5,#deleteFuncBtn6,#deleteFuncBtn7,#deleteFuncBtn8,#deleteFuncBtn9{
+#deleteClassBtn{
+	border-radius: 100%;
+	background: #C0070B;
+	border: 1px solid #C0070B;
+	font-weight: bolder;
+	color: white;
+	width: 30px;
+    height: 30px;
+	margin-left: 60px;
+	font-size: 18px;
+}
+#deleteVarBtn{
 	border-radius: 100%;
 	background: #C0070B;
 	border: 1px solid #C0070B;
 	font-weight: bolder;
 	color: white;
 	font-size: 14px;
-	margin-left: 10px;
+	margin-left: 13px;
+	width: 25px;
+    height: 25px;
+}
+#deleteFuncBtn{
+	border-radius: 100%;
+	background: #C0070B;
+	border: 1px solid #C0070B;
+	font-weight: bolder;
+	color: white;
+	font-size: 14px;
+	margin-left: 13px;
 	width: 25px;
     height: 25px;
 }
 /*For the delete button for the whole class*/
-#deleteClassBtn{
-	margin-left: 60px;
-	width: 30px;
-    height: 30px;
-	font-size: 18px;
+#deleteClass{
+	
 }
 .Acol-xl-3{
  background: #2867B2;	
@@ -61,12 +80,22 @@ border: 1px solid black;
 	 border: 1px solid black;
 }
 /*Function and Varable text fields*/
-#varName1,#varName,#varName2,#varName3,#varName4,#varName5,#varName6,#varName7,#varName8,#varName9,#funcName,#funcName1,#funcName2,#funcName3,#funcName4,#funcName5,#funcName6,#funcName7,#funcName8,#funcName9,#className{
+#varName,#funcName,#className{
 	border-radius: 5px;
 	border: 2px solid #2867B2;
 	padding-left: 10px;
 	margin-left: 10px;
 
+}
+#varName1,#funcName1{
+	border-radius: 5px;
+	border: 2px solid #2867B2;
+	padding-left: 10px;
+	margin-left: 10px;
+	margin-left: 20px;
+}
+Div{
+	margin-left: auto;
 }
 
 .ClassName{
