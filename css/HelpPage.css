@@ -1,8 +1,8 @@
 .help-header {
   padding: 60px;
   text-align: center;
-  background: #99b7e0;
-  color: #1966D0;
+  background: #1966D0;
+  color: white;
   font-size: 30px;
 }
 
@@ -62,8 +62,9 @@ div.panel.show {
 }
 
 .row{
-	background: #99b7e0
+	background: #1966D0
 }
 .text-center{
-	background: #99b7e0
+	background: #1966D0;
+		color: white;
 }
