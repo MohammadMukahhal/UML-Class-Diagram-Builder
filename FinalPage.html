@@ -38,14 +38,24 @@
 </nav>
 <!-- THIS IS THE END OF THE NAV BAR (See it did not bite) --> 
 	
-	
-<!-- Button -->
 <p>&nbsp;</p>
+<form method="post" name="ClassFrm" class="col-md-12" id="ClassFrm">
+  <label for="ClassNameLbl">
+ Class Name:&nbsp;</label>
+  <input name="ClassNameTxt" type="text" id="ClassNameTxt" readonly="true">
+	<input type="button" name="DependencyBtn" id="DependencyBtn" value="▼">
+  &nbsp;<br>
+
+
+<label for="ClassVariablesLbl">Class Variables:</label>
+<textarea name="ClassVariablesTxt" id="ClassVariablesTxt" readonly="true"></textarea><br>
+<label for="ClassFunctionsLbl">Class Functions:</label>
+<textarea name="ClassFunctionsTxt" id="ClassFunctionsTxt" readonly="true"></textarea>
 <p>&nbsp;</p>
+</form>
 <div class = "text-center" id = "ButtonToBuilder">
   <button type="button" class="btn btn-dark" onclick="window.location.href='BuilderPage.html'">Go Back To Builder</button>
 </div>
-<!-- End of Button -->
 
 <!-- FOOTER -->
 <div class="row">

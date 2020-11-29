@@ -1,8 +1,8 @@
 .help-header {
   padding: 60px;
   text-align: center;
-  background: #99b7e0;
-  color: #1966D0;
+  background: #1966D0;
+  color: white;
   font-size: 30px;
 }
 
@@ -59,4 +59,12 @@ div.panel {
 div.panel.show {
     opacity: 1;
     max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+.row{
+	background: #1966D0
+}
+.text-center{
+	background: #1966D0;
+		color: white;
 }
