@@ -5,7 +5,7 @@
 }
 
 .button{
-	background-color: #4CAF50; /* Green */
+  background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 10px 32px;
@@ -18,12 +18,12 @@
   cursor: pointer;
   background-color: white; 
   color: black; 
-  border: 2px solid #1966D0;
+  border: 2px solid #2867B2;
 }
 
 .button:hover {
-	background-color: #1966D0;
+	background-color: #2867B2;
   color: white;
 }
 
-}
+

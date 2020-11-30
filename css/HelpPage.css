@@ -1,7 +1,7 @@
 .help-header {
   padding: 60px;
   text-align: center;
-  background: #1966D0;
+  background: #2867B2;
   color: white;
   font-size: 30px;
 }
@@ -9,6 +9,7 @@
 
 p.accordion {
     background-color: #eee;
+	border-radius: 5px;
 	font-size: 17px;
     color: #444;
     cursor: pointer;
@@ -62,9 +63,9 @@ div.panel.show {
 }
 
 .row{
-	background: #1966D0
+	background: #2867B2;
 }
 .text-center{
-	background: #1966D0;
+	background: #2867B2;
 		color: white;
 }
