@@ -55,6 +55,7 @@ div.panel {
     transition: 0.4s ease-in-out;
     opacity: 0;
     margin-bottom:10px;
+	border-radius: 5px;
 }
 
 div.panel.show {
@@ -68,4 +69,12 @@ div.panel.show {
 .text-center{
 	background: #2867B2;
 		color: white;
+}
+
+.helpdesign{
+	 border: 1px solid white ;
+	padding: 30px;
+	border-radius: 10px;
+	border-width: 5px;
+	
 }
