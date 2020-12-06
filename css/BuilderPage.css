@@ -325,7 +325,7 @@ figure img{width:300px;}
 }
 
 .button{
-  background-color: #4CAF50; /* Green */
+  background-color: transparent; /* Green */
   border: none;
   color: white;
   padding: 10px 32px;
@@ -336,13 +336,13 @@ figure img{width:300px;}
   margin: 2px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: white; 
+  background-color: transparent; 
   color: black; 
   border: 2px solid #2867B2;
 }
 
 .button:hover {
-	background-color: #2867B2;
+	background-color: transparent;
   color: white;
 }
 
