@@ -8,16 +8,41 @@ h1.display-4{
 
 }
 
-.div.UML.Class{
-	width: 960px;
-	margin: 0 auto;
-	position: relative;
+#AddClassButton{
+	border-radius: 100%;
+	border: 2px solid white;
+	font-weight: bolder;
+	color: white;
+	margin-left: 60px;
+	font-size: 18px;
+	width: 35px;
+    height: 35px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	
 }
+#AddClassButton1{
+	border-radius: 100%;
+	border: 2px solid white;
+	font-weight: bolder;
+	color: white;
+	margin-left: 15px;
+	font-size: 18px;
+	width: 35px;
+    height: 35px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	
+}
+
 /* CSS for the UML Class Design*/
 h5{
 	
 	text-align: center;
 }
+
 /*Add button for func and var*/
 #varPlusButton,#funcPlusButton{
 	border-radius: 100%;
@@ -37,11 +62,13 @@ h5{
 	border: 1px solid #C0070B;
 	font-weight: bolder;
 	color: white;
-	width: 30px;
-    height: 30px;
+	width: 35px;
+    height: 35px;
 	margin-left: 60px;
 	font-size: 18px;
 }
+	
+
 #deleteVarBtn{
 	border-radius: 100%;
 	background: #C0070B;
@@ -50,6 +77,17 @@ h5{
 	color: white;
 	font-size: 14px;
 	margin-left: 13px;
+	width: 25px;
+    height: 25px;
+}
+#deleteVarBtn1{
+	border-radius: 100%;
+	background: #C0070B;
+	border: 1px solid #C0070B;
+	font-weight: bolder;
+	color: white;
+	font-size: 14px;
+	margin-left: 11px;
 	width: 25px;
     height: 25px;
 }
@@ -66,8 +104,18 @@ h5{
 }
 /*For the delete button for the whole class*/
 #deleteClass{
+	border-radius: 100%;
+	background: #C0070B;
+	border: 1px solid #C0070B;
 	
+	font-weight: bolder;
+	color: white;
+	width: 30px;
+    height: 30px;
+	margin-left: 60px;
+	font-size: 18px;
 }
+	
 .Acol-xl-3{
  background: #2867B2;	
  margin: auto;
@@ -75,11 +123,6 @@ h5{
 border: 1px solid black;
 }
 
-.Acol-xl-3{
-  margin: auto;
-  padding: 10px;
-  border: 1px solid black;
-}
 
 #ClassVar,#classFunc{
 	 border: 1px solid black;
@@ -96,8 +139,26 @@ border: 1px solid black;
 	border-radius: 5px;
 	border: 2px solid #2867B2;
 	padding-left: 10px;
-	margin-left: 10px;
 	margin-left: 20px;
+}
+#varName2,#varName3,#funcName2{
+	border-radius: 5px;
+	border: 2px solid #2867B2;
+	padding-left: 10px;
+	margin-left: 20px;
+	
+}
+#dependName{
+	border-radius: 5px;
+	border: 2px solid #2867B2;
+	padding-left: 10px;
+}
+#dependName1{
+	border-radius: 5px;
+	border: 2px solid #2867B2;
+	padding-left: 10px;
+	margin-left: 10px;
+
 }
 Div{
 	margin-left: auto;
@@ -116,9 +177,16 @@ Div{
  border: 1px solid black;
 
 }
+.Doffset-xl-4{
+margin: auto;
+ padding: 20px;
+ border: 1px solid black;
+}
 /*Drop down menus*/
 .DDL,.DDL1{
 	cursor: pointer;
+	border-radius: 5px;
+	border: 2px solid #C0070B;
 }
 .DDL1{
 	margin-left: 150px;
@@ -133,6 +201,16 @@ Div{
 	height: 120px;
 }
 
+#AddClass,#MainMenu{
+	
+	background-color: #2867B2;
+	color: white;
+	font-weight: bold;
+	border-radius: 50px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
 .cta-100 {
   margin-top: 100px;
