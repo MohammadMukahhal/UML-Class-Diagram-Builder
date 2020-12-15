@@ -25,8 +25,6 @@
   &nbsp;</span> </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      
-          
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <button type="button" class="button" onclick="window.location.href='HelpPage.html'"> Help </button>
@@ -38,109 +36,101 @@
 <!-- CODE FOR THE HEADER -->
 <div class="jumbotron jumbotron-fluid text-center" style = "background:#2867B2">
   <h1 class="display-4" style = "color:white " font= "bolder">UML CLASS DIAGRAM BUILDER&nbsp;</h1>
-
 </div>
 <!-- END OF THE HEADER --> 
 
 <!-- CODE FOR THE UML Classes -->
-<div class="UML Class" id="UMLClass">
+<div class="UML Class" id="UMLClass"> 
   <!-- Code of the uml class name -->
   <form class="Acol-xl-3 offset-xl-4 col-xl-4">
     <label for="textfield" class="ClassName" style= "color: white">Class Name</label>
-	  <span data-tip="Enter name of class">
+    <span data-tip="Enter name of class">
     <input type="text" name="className" id="className">
-	  </span>
-	  
-	  <span data-tip="Delete class">
+    </span> <span data-tip="Delete class">
     <input type="button" name="button5" id="deleteClassBtn" value="-">
-	  </span>
+    </span>
   </form>
-	<!-- End of the uml class name -->
-	
-<!-- Code for the drop down menus,add,delete buttons,and text,for class variable section -->
+  <!-- End of the uml class name --> 
+  
+  <!-- Code for the drop down menus,add,delete buttons,and text,for class variable section -->
   <form class="offset-xl-4 col-xl-4" id="ClassVar">
     <br>
-	  <div class="col-xl-12">
-    <h5 style="color:#2867B2;">Class Variables</h5>
-    <!-- Code for the drop down menu -->
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <!-- End for the drop down menu -->
-	  
-    <!-- Code for the text and Add button -->
-	 
-	
-		<label for="varName" ></label>
-    <span data-tip="Enter name of variable">
-		<input type="text" name="varName" id="varName">
-		  </span>
-		  <span data-tip="Add variable">
-    	<input type="button" name="buttonPlus" id="varPlusButton" value="+" onclick="AddTextBox()" onClick= "addSelect('select');">
-		  </span>
-		<div id="TextBoxContainer" >
-    <!--Textboxes will be added here -->
-		</div>
-		<br />
-		<asp:button ID="btnPost" runat="server" Text="Post" OnClick="Post" />
-   
+    <div class="col-xl-12">
+      <h5 style="color:#2867B2;">Class Variables</h5>
+      <!-- Code for the drop down menu -->
+      <select name="DDL" class="DDL">
+        <option>Select Modifier</option>
+        <option value="Public">Public</option>
+        <option value="Private">Private</option>
+        <option value="Protected">Protected</option>
+      </select>
+      <!-- End for the drop down menu --> 
+      
+      <!-- Code for the text and Add button -->
+      
+      <label for="varName" ></label>
+      <span data-tip="Enter name of variable">
+      <input type="text" name="varName" id="varName">
+      </span> <span data-tip="Add variable">
+      <input type="button" name="buttonPlus" id="varPlusButton" value="+" onclick="AddTextBox()" onClick= "addSelect('select');">
+      </span>
+      <div id="TextBoxContainer" > 
+        <!--Textboxes will be added here --> 
+      </div>
+      <br />
+      <asp:button ID="btnPost" runat="server" Text="Post" OnClick="Post" />
     </div>
   </form>
-	 
-<!-- End for the drop down menus,add,delete buttons, and text for class variable section -->	
-	
-<!-- Code for the drop down menus,add,delete buttons, and text for class function section -->	
+  
+  <!-- End for the drop down menus,add,delete buttons, and text for class variable section --> 
+  
+  <!-- Code for the drop down menus,add,delete buttons, and text for class function section -->
   <form class="offset-xl-4 col-xl-4" id="classFunc">
     <br>
-	  <div class="col-xl-12">
-	<!-- Header for class variable section -->  
-    <h5 style="color:#2867B2;">Class Functions </h5>
-	  <!-- End of the Header for class variable section --> 
-	<!-- Code for the drop down menu-->	  
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-	  <!-- End for the drop down menu-->	  
-	  
-	  <!-- Code for text and add button-->	  
-    <label for="funcName"></label>
-		  <span data-tip="Enter name of function">
-    <input type="text" name="funcName" id="funcName">
-		  </span>
-		  <span data-tip="Add function">
-    <input name="button3" type="button" id="funcPlusButton" value="+" onclick="AddTextBox1()" >
-		  </span>
-    <br>
-	  <div id="TextBoxContainer1" >
-    <!--Textboxes will be added here -->
-		</div>
-		<br />
-		<asp:button ID="btnPost1" runat="server" Text="Post" OnClick="Post" />
-		  </div>
-	 <!-- End for text and add button--> 
-	  
-	
+    <div class="col-xl-12"> 
+      <!-- Header for class variable section -->
+      <h5 style="color:#2867B2;">Class Functions </h5>
+      <!-- End of the Header for class variable section --> 
+      <!-- Code for the drop down menu-->
+      <select name="DDL" class="DDL">
+        <option>Select Modifier</option>
+        <option value="Public">Public</option>
+        <option value="Private">Private</option>
+        <option value="Protected">Protected</option>
+      </select>
+      <!-- End for the drop down menu--> 
+      
+      <!-- Code for text and add button-->
+      <label for="funcName"></label>
+      <span data-tip="Enter name of function">
+      <input type="text" name="funcName" id="funcName">
+      </span> <span data-tip="Add function">
+      <input name="button3" type="button" id="funcPlusButton" value="+" onclick="AddTextBox1()" >
+      </span> <br>
+      <div id="TextBoxContainer1" > 
+        <!--Textboxes will be added here --> 
+      </div>
+      <br />
+      <asp:button ID="btnPost1" runat="server" Text="Post" OnClick="Post" />
+    </div>
+    <!-- End for text and add button-->
+    
   </form>
-	<!-- End for the drop down menus,add, delete buttons, and text for class function section -->	
-	
-	<!-- Code for the drop down menu for the Dependent Class-->	
+  <!-- End for the drop down menus,add, delete buttons, and text for class function section --> 
+  
+  <!-- Code for the drop down menu for the Dependent Class-->
   <form class="Ccol-xl-5 offset-xl-4 col-xl-4">
     <select name="DDL1" class="DDL1">
       <option>Dependent Class</option>
       <option value=""></option>
     </select>
-	<!-- End for the drop down menu for the Dependent Class-->	  
+    <!-- End for the drop down menu for the Dependent Class-->
   </form>
 </div>
-<!-- END OF UML CLASS DESIGN -->
 
-<!-----Script to add and delete textboxes and drop down menus for Class function comment------>
+<!-- END OF UML CLASS DESIGN --> 
+
+<!-----Script to add and delete textboxes and drop down menus for Class function comment------> 
 <script type="text/javascript">
 	
 	function GetDynamicTextBox1(value){
@@ -175,9 +165,9 @@ function RecreateDynamicTextboxes1() {
     }
 }
 window.onload = RecreateDynamicTextboxes1;
-	</script>
-		  
-<!-----Script to add and delete textboxes and drop down menus for Class variables------>  
+	</script> 
+
+<!-----Script to add and delete textboxes and drop down menus for Class variables------> 
 <script type="text/javascript">
 	
 function GetDynamicTextBox(value){
@@ -216,11 +206,63 @@ function RecreateDynamicTextboxes() {
     }
 }
 window.onload = RecreateDynamicTextboxes;
-</script>
-	
+</script> 
 
+<!-- Script for the data storage --> 
+<script> 
+var classNames = [];
+function onClickFunc(){
+		window.alert("Local Storage Function is Running!");
 	
+		const classNameKey = document.getElementById("className");
+		const name1 = classNameKey.value;
 	
+		const varNameKey = document.getElementById("varName");
+		const var1 = varNameKey.value;
+	
+		const funcNameKey = document.getElementById("funcName");
+		const func1 = funcNameKey.value;
+		
+		const dynamicBox = document.getElementById("varName1");
+		const varBox = dynamicBox.value;
+	if(name1 && var1 && func1 && varBox){
+		localStorage.setItem("className1", name1);
+		localStorage.setItem("varName1", var1);
+		localStorage.setItem("funcName1", func1);
+		
+		//const temp =  localStorage.getItem("varName2");
+		//while(temp != varBox){
+		localStorage.setItem("varName2", varBox);
+		//const temp =  localStorage.getItem("varName2");
+		//classNames += name1.value;
+		}
+	else{
+		window.alert("Please Enter valid text!");
+		}
+}
+</script> 
+<!-- End data storage script --> 
+
+<!-- Submit Button -->
+<p>&nbsp;</p>
+<div class = "text-center" id = "submitBtn">
+  <button type="button" class="btn btn-dark" onclick= "onClickFunc()" >Submit</button>
+</div>
+<!-- End of Button --> 
+	
+	<!-- Print Button -->
+<p>&nbsp;</p>
+<div class = "text-center" id = "printBtn">
+  <button type="button" class="btn btn-dark" onclick= "window.print()" >Print!</button>
+</div>
+<!-- End of Button --> 
+	
+	<!-- Final Page Button -->
+<p>&nbsp;</p>
+<div class = "text-center" id = "FinalPageBtn">
+  <button type="button" class="btn btn-dark" onclick="window.location.href='FinalPage.html'">Go to Final Page</button>
+</div>
+<!-- End of Button --> 
 
 <!-- Button -->
 <p>&nbsp;</p>
@@ -241,14 +283,13 @@ window.onload = RecreateDynamicTextboxes;
 </div>
 <!-- END OF FOOTER (The rest is some bootstrap gibberish) --> 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-3.4.1.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap-4.4.1.js"></script>
-<!-- This is our JS file not bootstrap -->
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script> 
+<!-- This is our JS file not bootstrap --> 
 <script src="js/BuilderPage.js"></script>
-
 </body>
 </html>
