@@ -26,7 +26,15 @@ p.accordion {
 p.accordion.active, p.accordion:hover {
     background-color: #ddd;
 }
+#BackBuilder,#MainMenu{
 
+	color: white;
+	font-weight: bold;
+	border-radius: 50px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 /* Unicode character for "plus" sign (+) */
 p.accordion:after {
     content: '\2795'; 
