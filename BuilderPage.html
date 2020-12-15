@@ -243,38 +243,25 @@ function onClickFunc(){
 </script> 
 <!-- End data storage script --> 
 
-<!-- Submit Button -->
-<p>&nbsp;</p>
-<div class = "text-center" id = "submitBtn">
-  <button type="button" class="btn btn-dark" onclick= "onClickFunc()" >Submit</button>
-</div>
-<!-- End of Button --> 
+	
+
 	
 	<!-- Print Button -->
 <p>&nbsp;</p>
-<div class = "text-center" id = "printBtn">
-  <button type="button" class="btn btn-dark" onclick= "window.print()" >Print!</button>
-</div>
-<!-- End of Button --> 
+<div class = "text-center" id = "Buttons">
 	
-	<!-- Final Page Button -->
-<p>&nbsp;</p>
-<div class = "text-center" id = "FinalPageBtn">
-  <button type="button" class="btn btn-dark" onclick="window.location.href='FinalPage.html'">Go to Final Page</button>
+	<button type="button" id = "FinalPageBtn" class="btn btn-dark" onclick="window.location.href='FinalPage.html'">Go to Final Page</button>
+	
+	<button type="button" id = "printBtn" class="btn btn-dark" onclick= "onPrint()" value = "Print this page" >Print!</button>
+	
+	<button type="button" id = "backToMain" class="btn btn-dark" onclick="window.location.href='Index.html'">Go Back To Main</button>
 </div>
 <!-- End of Button --> 
 
-<!-- Button -->
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div class = "text-center" id = "ButtonToBuilder">
-  <button type="button" class="btn btn-dark" onclick="window.location.href='Index.html'">Go Back To Main</button>
-</div>
-<!-- End of Button --> 
 
 <!-- FOOTER -->
 <div class="row">
-  <div class="text-center col-lg-6 offset-lg-3">
+  <div class="text-center col-lg-6 offset-lg-3" id = "footer">
     <h4>&nbsp;</h4>
     <p>Copyright &copy; 2019 &middot; All Rights Reserved &middot; <a href="#">My Website</a></p>
     <p>Mohammad Mukahhal is the best developer&nbsp;</p>
