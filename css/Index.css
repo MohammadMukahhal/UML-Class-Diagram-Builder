@@ -7,7 +7,15 @@
 [data-tip] {
     position:relative;
 }
-
+#GetStarted{
+	background-color: #2867B2;
+	color: white;
+	font-weight: bold;
+	border-radius: 50px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
 [data-tip]:before {
     content:'';
