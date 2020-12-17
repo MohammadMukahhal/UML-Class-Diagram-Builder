@@ -25,193 +25,155 @@
   &nbsp;</span> </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      
-          
     </ul>
-    <a href="HelpPage.html">
-		  <span data-tip="Help">
-		  <img alt="Help" src="images/qmark.png" width="70" height="70">
-		  </span>
-      </a>
-  </div>
+    <a href="HelpPage.html"> <span data-tip="Help"> <img alt="Help" src="images/qmark.png" width="70" height="70"> </span> </a> </div>
 </nav>
 <!-- THIS IS THE END OF THE NAV BAR (See it did not bite) --> 
 
 <!-- CODE FOR THE HEADER -->
 <div class="jumbotron jumbotron-fluid text-center" style = "background:#2867B2">
   <h1 class="display-4" style = "color:white " font= "bolder">UML CLASS DIAGRAM BUILDER&nbsp;</h1>
-
 </div>
 <!-- END OF THE HEADER --> 
 
-<!-- CODE FOR THE UML Classes -->
+<!-- CODE FOR THE UML Classes --> 
 
-    <!--Textboxes will be added here -->
-		
-<div class="UML Class" id="UMLClass"  >
-	
+<!--Textboxes will be added here -->
+
+<div class="UML Class" id="UMLClass"  > 
+  
   <!-- Code of the uml class name -->
   <div class = "Acol-xl-3 offset-xl-4 col-xl-4">
     <label for="textfield" class="ClassName" style= "color: white">Class Name</label>
-	  
-	  <span data-tip="Enter name of class">
+    <span data-tip="Enter name of class">
     <input type="text" name="className" id="className">
-	  </span>
-	  
-	
-	  <span data-tip="Add Class">
-    
-	<input type = "button" class = "btn AddClass" id = "AddClassButton" value = "+" onClick = "AddClass()" />
-	
-	  </span>
-	 
-  </div>
-	
-
-	
-	<!-- End of the uml class name -->
-	
-<!-- Code for the drop down menus,add,delete buttons,and text,for class variable section -->
+    </span> <span data-tip="Add Class">
+    <input type = "button" class = "btn AddClass" id = "AddClassButton" value = "+" onClick = "AddClass()" />
+    </span> </div>
+  
+  <!-- End of the uml class name --> 
+  
+  <!-- Code for the drop down menus,add,delete buttons,and text,for class variable section -->
   <form class="offset-xl-4 col-xl-4" id="ClassVar">
-	  
     <br>
-	  <div class="col-xl-12">
-    <h5 style="color:#2867B2;">Class Variables</h5>
-    <!-- Code for the drop down menu -->
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-    <!-- End for the drop down menu -->
-	  
-    <!-- Code for the text and Add button -->
-	 
-	
-		<label for="varName" ></label>
-    <span data-tip="Enter name of variable">
-		<input type="text" name="varName" id="varName">
-	    </span>
-		  <span data-tip="Add variable">
-    	<input type="button" name="buttonPlus" id="varPlusButton" value="+" onclick="AddTextBox()">
-		  </span>
-		<div id="TextBoxContainer" >
-    <!--Textboxes will be added here -->
-		</div>
-		<br />
-		<asp:button ID="btnPost" runat="server" Text="Post" OnClick="Post" />
-   
+    <div class="col-xl-12">
+      <h5 style="color:#2867B2;">Class Variables</h5>
+      <!-- Code for the drop down menu -->
+      <select name="DDL" class="DDL">
+        <option>Select Modifier</option>
+        <option value="Public">Public</option>
+        <option value="Private">Private</option>
+        <option value="Protected">Protected</option>
+      </select>
+      <!-- End for the drop down menu --> 
+      
+      <!-- Code for the text and Add button -->
+      
+      <label for="varName" ></label>
+      <span data-tip="Enter name of variable">
+      <input type="text" name="varName" id="varName">
+      </span> <span data-tip="Add variable">
+      <input type="button" name="buttonPlus" id="varPlusButton" value="+" onclick="AddTextBox()">
+      </span>
+      <div id="TextBoxContainer" > 
+        <!--Textboxes will be added here --> 
+      </div>
+      <br />
+      <asp:button ID="btnPost" runat="server" Text="Post" OnClick="Post" />
     </div>
   </form>
-	 
-<!-- End for the drop down menus,add,delete buttons, and text for class variable section -->	
-	
-<!-- Code for the drop down menus,add,delete buttons, and text for class function section -->	
+  
+  <!-- End for the drop down menus,add,delete buttons, and text for class variable section --> 
+  
+  <!-- Code for the drop down menus,add,delete buttons, and text for class function section -->
   <form class="offset-xl-4 col-xl-4" id="classFunc">
     <br>
-	  <div class="col-xl-12">
-	<!-- Header for class variable section -->  
-    <h5 style="color:#2867B2;">Class Functions </h5>
-	  <!-- End of the Header for class variable section --> 
-	<!-- Code for the drop down menu-->	  
-    <select name="DDL" class="DDL">
-      <option>Select Modifier</option>
-      <option value="Public">Public</option>
-      <option value="Private">Private</option>
-      <option value="Protected">Protected</option>
-    </select>
-	  <!-- End for the drop down menu-->	  
-	  
-	  <!-- Code for text and add button-->	  
-    <label for="funcName"></label>
-		  <span data-tip="Enter name of function">
-    <input type="text" name="funcName" id="funcName">
-		  </span>
-		  <span data-tip="Add function">
-    <input name="button3" type="button" id="funcPlusButton" value="+" onclick="AddTextBox1()" >
-		  </span>
-    <br>
-	  <div id="TextBoxContainer1" >
-    <!--Textboxes will be added here -->
-		</div>
-		<br />
-		<asp:button ID="btnPost1" runat="server" Text="Post" OnClick="Post" />
+    <div class="col-xl-12"> 
+      <!-- Header for class variable section -->
+      <h5 style="color:#2867B2;">Class Functions </h5>
+      <!-- End of the Header for class variable section --> 
+      <!-- Code for the drop down menu-->
+      <select name="DDL" class="DDL">
+        <option>Select Modifier</option>
+        <option value="Public">Public</option>
+        <option value="Private">Private</option>
+        <option value="Protected">Protected</option>
+      </select>
+      <!-- End for the drop down menu--> 
+      
+      <!-- Code for text and add button-->
+      <label for="funcName"></label>
+      <span data-tip="Enter name of function">
+      <input type="text" name="funcName" id="funcName">
+      </span> <span data-tip="Add function">
+      <input name="button3" type="button" id="funcPlusButton" value="+" onclick="AddTextBox1()" >
+      </span> <br>
+      <div id="TextBoxContainer1" > 
+        <!--Textboxes will be added here --> 
+      </div>
+      <br />
+      <asp:button ID="btnPost1" runat="server" Text="Post" OnClick="Post" />
     </div>
-	  
-	 <!-- End for text and add button--> 
-	  
-	
+    
+    <!-- End for text and add button-->
+    
   </form>
-<form class="Doffset-xl-4 col-xl-4">
-	<label for="textfield" class="ClassName" style= "color:#2867B2 ">Class Dependency</label>
-	<label for="dependName"></label>
-		  <span data-tip="Enter name of dependent class">
+  <form class="Doffset-xl-4 col-xl-4">
+    <label for="textfield" class="ClassName" style= "color:#2867B2 ">Class Dependency</label>
+    <label for="dependName"></label>
+    <span data-tip="Enter name of dependent class">
     <input type="text" name="dependName" id="dependName">
-		  </span>
-	</form>
-	<br>
-	<!-- End for the drop down menus,add, delete buttons, and text for class function section -->	
-	
-	<!-- Code for the drop down menu for the Dependent Class-->	
- 
+    </span>
+  </form>
+  <br>
+  <!-- End for the drop down menus,add, delete buttons, and text for class function section --> 
   
+  <!-- Code for the drop down menu for the Dependent Class--> 
+  
+</div>
 
-	</div>
-
-	
 <!-- END OF UML CLASS DESIGN -->
-	
-	
-	<div id="ClassContainer" >
-    <!--Textboxes will be added here -->
-		</div>
-		
-		<asp:button id="1btnPost" runat="server" Text="Post" OnClick="Post" />
-	<div id="ClassContainer1" >
-    <!--Textboxes will be added here -->
-		</div>
-		
-		<asp:button id="btnPost2" runat="server" Text="Post" OnClick="Post" />
-	<div id="ClassContainer2" >
-    <!--Textboxes will be added here -->
+
+<div id="ClassContainer" > 
+  <!--Textboxes will be added here --> 
 </div>
-		
-		<asp:button id="btnPost3" runat="server" Text="Post" OnClick="Post" />
-	<div id="ClassContainer3" >
-    <!--Textboxes will be added here -->
+<asp:button id="1btnPost" runat="server" Text="Post" OnClick="Post" />
+<div id="ClassContainer1" > 
+  <!--Textboxes will be added here --> 
 </div>
-		
-		<asp:button id="btnPost4" runat="server" Text="Post" OnClick="Post" />
-	<div id="ClassContainer4" >
-    <!--Textboxes will be added here -->
+<asp:button id="btnPost2" runat="server" Text="Post" OnClick="Post" />
+<div id="ClassContainer2" > 
+  <!--Textboxes will be added here --> 
 </div>
-	
-		<asp:button id="btnPost5" runat="server" Text="Post" OnClick="Post" />
-	<div id="ClassContainer5" >
-    <!--Textboxes will be added here -->
+<asp:button id="btnPost3" runat="server" Text="Post" OnClick="Post" />
+<div id="ClassContainer3" > 
+  <!--Textboxes will be added here --> 
 </div>
-		
-		<asp:button id="btnPost6" runat="server" Text="Post" OnClick="Post" />
+<asp:button id="btnPost4" runat="server" Text="Post" OnClick="Post" />
+<div id="ClassContainer4" > 
+  <!--Textboxes will be added here --> 
+</div>
+<asp:button id="btnPost5" runat="server" Text="Post" OnClick="Post" />
+<div id="ClassContainer5" > 
+  <!--Textboxes will be added here --> 
+</div>
+<asp:button id="btnPost6" runat="server" Text="Post" OnClick="Post" />
 <!----- Add Button --->
-	<div id="ClassContainer6" >
-    <!--Textboxes will be added here -->
+<div id="ClassContainer6" > 
+  <!--Textboxes will be added here --> 
 </div>
-	
-		<asp:button id="btnPost7" runat="server" Text="Post" OnClick="Post" />
-	<div id="ClassContainer7" >
-    <!--Textboxes will be added here -->
+<asp:button id="btnPost7" runat="server" Text="Post" OnClick="Post" />
+<div id="ClassContainer7" > 
+  <!--Textboxes will be added here --> 
 </div>
-		
-		<asp:button id="btnPost8" runat="server" Text="Post" OnClick="Post" />
-	<div id="ClassContainer8" >
-    <!--Textboxes will be added here -->
+<asp:button id="btnPost8" runat="server" Text="Post" OnClick="Post" />
+<div id="ClassContainer8" > 
+  <!--Textboxes will be added here --> 
 </div>
-	
-		<asp:button id="btnPost9" runat="server" Text="Post" OnClick="Post" />
-	<!----- Add Button --->
-	
-	<!-- Button -->
+<asp:button id="btnPost9" runat="server" Text="Post" OnClick="Post" />
+<!----- Add Button ---> 
+
+<!-- Button --> 
 <!-- End of Button --> 
 <script type="text/javascript">
 	
@@ -407,10 +369,10 @@ function RecreateDynamicTextboxes() {
 }
 window.onload = RecreateDynamicTextboxes;
 
-	</script>
+	</script> 
 
-<!-----Script to add and delete textboxes and drop down menus for Class function comment------>
-	
+<!-----Script to add and delete textboxes and drop down menus for Class function comment------> 
+
 <script type="text/javascript">
 	
 	function GetDynamicTextBox1(value){
@@ -432,11 +394,7 @@ function RemoveTextBox1(div1) {
 }
 	
 	
-</script>
-	
-
-	
-	
+</script> 
 <script type="text/javascript">
 	
 function GetDynamicTextBox(value){
@@ -769,11 +727,9 @@ function RemoveTextBox20(div3) {
     document.getElementById("TextBoxContainer20").removeChild(div3.parentNode);
 	
 }
-	</script>
-	
+	</script> 
 
-		  
-<!-----Script to add and delete textboxes and drop down menus for Class variables------>  
+<!-----Script to add and delete textboxes and drop down menus for Class variables------> 
 <script type="text/javascript">
 	
 function GetDynamicTextBox(value){
@@ -809,7 +765,7 @@ function RecreateDynamicTextboxes() {
     }
 }
 window.onload = RecreateDynamicTextboxes;
-</script>
+</script> 
 <script> 
 var classNames = [];
 function onClickFunc(){
@@ -844,18 +800,14 @@ function onClickFunc(){
 </script> 
 <!-- End data storage script --> 
 
-	
-
-	
-	<!-- Print Button -->
+<!-- Print Button -->
 <p>&nbsp;</p>
 <div class = "text-center" id = "Buttons">
-	
-	<button type="button" id = "backToMain" class="btn btn-dark" onclick="window.location.href='Index.html'">Back</button>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<button type="button" id = "printBtn" class="btn btn-dark" onclick= "onPrint()" value = "Print this page" >Print</button>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<button type="button" id = "FinalPageBtn" class="btn btn-dark" onclick="window.location.href='FinalPage.html'">Finish</button> 
+  <button type="button" id = "backToMain" class="btn btn-dark" onclick="window.location.href='Index.html'">Back</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button type="button" id = "printBtn" class="btn btn-dark" onclick= "onPrint()" value = "Print this page" >Print</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button type="button" id = "FinalPageBtn" class="btn btn-dark" onclick="window.location.href='FinalPage.html'">Finish</button>
 </div>
 <!-- FOOTER -->
 <div class="row" id = "footer">
@@ -866,14 +818,13 @@ function onClickFunc(){
 </div>
 <!-- END OF FOOTER (The rest is some bootstrap gibberish) --> 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-3.4.1.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap-4.4.1.js"></script>
-<!-- This is our JS file not bootstrap -->
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script> 
+<!-- This is our JS file not bootstrap --> 
 <script src="js/BuilderPage.js"></script>
-
 </body>
 </html>
